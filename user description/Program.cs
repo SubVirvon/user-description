@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace user_description
 {
@@ -10,16 +6,20 @@ namespace user_description
     {
         static void Main(string[] args)
         {
-            string userName;
-            int userAge, userGrowth;
+            string name;
+            int age;
+            int growth;
 
             Console.Write("Введите ваше имя: ");
-            userName = Console.ReadLine();
+            name = Console.ReadLine();
+
             Console.Write("Введите ваш возраст: ");
-            userAge = Convert.ToInt32(Console.ReadLine());
+            age = Convert.ToInt32(Console.ReadLine());
+
             Console.Write("Введите ваш рост: ");
-            userGrowth = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Ваше имя " + userName + ", вам " + userAge + ", у вас огромный рост, который состовляет " + userGrowth + " см, и прекрасное телосложение.");
+            growth = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Ваше имя " + name + ", вам " + age + ", у вас огромный рост: " + growth + " см и прекрасное телосложение.");
             Console.ReadKey();
         }
     }
